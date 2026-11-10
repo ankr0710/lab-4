@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Группа "Название" | Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🎸 РОК-ГРУППА "ЭХО"</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="catlog.html">О группе</a></li>
+                <li><a href="calc.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="fade-in">
+        <section class="hero">
+            <h1>Добро пожаловать на официальный сайт</h1>
+            <p>Новый альбом уже в продаже! Забронируйте билеты на ближайший концерт.</p>
+        </section>
+
+        <!-- Форма расчета -->
+        <section class="calculator-section">
+            <h2>Калькулятор стоимости билетов</h2>
+            <form id="calcForm">
+                <div class="form-group">
+                    <label for="ticketCount">Количество билетов:</label>
+                    <input type="number" id="ticketCount" value="1" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="vipCheck"> VIP-зона (+50% к цене)
+                    </label>
+                </div>
+                <p class="base-price">Базовая цена билета: 2500 руб.</p>
+                <button type="button" id="calcBtn" class="btn">Рассчитать</button>
+            </form>
+            <div class="result-box">
+                <h3>Итого к оплате: <span id="totalResult">0</span> руб.</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Группа "ЭХО". Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
